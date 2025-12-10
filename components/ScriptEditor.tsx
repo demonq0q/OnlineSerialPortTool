@@ -196,7 +196,7 @@ export default function ScriptEditor({ onSend, isConnected }: ScriptEditorProps)
       <textarea
         value={currentScript}
         onChange={(e) => setCurrentScript(e.target.value)}
-        placeholder='# 在此编写脚本，或点击"加载示例"查看示例代码'
+        placeholder="# 在此编写脚本，或点击加载示例查看示例代码"
         className={`w-full h-64 px-3 py-2 border rounded font-mono text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 ${
           validationError ? 'border-red-500' : ''
         }`}
@@ -255,7 +255,7 @@ export default function ScriptEditor({ onSend, isConnected }: ScriptEditorProps)
       <div className="mt-4 text-sm text-gray-600 bg-gray-50 p-3 rounded">
         <div className="font-bold mb-2">脚本语法说明:</div>
         <div className="space-y-1 font-mono text-xs">
-          <div>• SEND "数据" - 发送数据（支持 \r \n 转义）</div>
+          <div>• SEND &quot;数据&quot; - 发送数据（支持 \r \n 转义）</div>
           <div>• DELAY 毫秒 - 延时（最大 60000ms）</div>
           <div>• LOOP 次数 ... END - 循环（最大 10000 次）</div>
           <div>• # 注释 - 单行注释</div>
